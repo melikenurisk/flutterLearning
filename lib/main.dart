@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:full_learn/101/list_view_learn.dart';
 import 'package:full_learn/101/page_view_learn.dart';
+import 'package:full_learn/202/model_learn_view.dart';
+import 'package:full_learn/202/tab_learn.dart';
 import 'package:full_learn/demos/color_demos_view.dart';
 import '101/button_learn.dart';
 import '101/color_learn.dart';
@@ -25,6 +27,15 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData.dark().copyWith(
+          tabBarTheme: const TabBarTheme(
+            indicatorSize: TabBarIndicatorSize.label,
+            indicatorColor: Colors.white,
+            unselectedLabelColor: Colors.green,
+          ),
+          bottomAppBarTheme: const BottomAppBarTheme(
+            shape: CircularNotchedRectangle(),
+          ),
+
           // ignore: deprecated_member_use
           errorColor: ColorItems.sulu,
           textSelectionTheme: const TextSelectionThemeData(cursorColor: Colors.green, selectionColor: Colors.red),
@@ -50,6 +61,6 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
           ),
         ),
-        home: const NavigationLearn());
+        home: const ModelLearnView());
   }
 }
