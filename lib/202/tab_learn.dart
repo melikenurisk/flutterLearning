@@ -52,7 +52,7 @@ class _TabLearnState extends State<TabLearn> with TickerProviderStateMixin {
     return TabBarView(
         physics: const NeverScrollableScrollPhysics(),
         controller: _tabController,
-        children: [ImageLearn(), IconLearnView(), IconLearnView(), IconLearnView()]);
+        children: [const ImageLearn(), IconLearnView(), IconLearnView(), IconLearnView()]);
   }
 }
 

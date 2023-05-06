@@ -1,8 +1,6 @@
 // bİr ekran olacak ekranda 3 button ve bunlara basınca renk değişimi olacak
 // seçili buton button selected icon olsun
 
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class ColorDemos extends StatefulWidget {

@@ -1,18 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:full_learn/101/list_view_learn.dart';
-import 'package:full_learn/101/page_view_learn.dart';
-import 'package:full_learn/202/model_learn_view.dart';
-import 'package:full_learn/202/tab_learn.dart';
-import 'package:full_learn/demos/color_demos_view.dart';
-import '101/button_learn.dart';
+
+import 'package:full_learn/202/service/service_get_learn_view.dart';
+import 'package:full_learn/202/service/service_post_learn_view.dart';
 import '101/color_learn.dart';
-import '101/navigate_detail_learn.dart';
-import '101/navigation_learn.dart';
-import '101/stateful_life_cycle.dart';
-import '101/stateless_learn.dart';
-import '101/text_field_learn.dart';
-import 'demos/color_life_cycle.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,6 +52,6 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
           ),
         ),
-        home: const ModelLearnView());
+        home: const ServiceLearn());
   }
 }
