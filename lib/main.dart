@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'package:full_learn/202/package_learn_view.dart';
 import 'package:full_learn/202/service/service_get_learn_view.dart';
 import 'package:full_learn/202/service/service_post_learn_view.dart';
 import '101/color_learn.dart';
@@ -52,6 +53,6 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
           ),
         ),
-        home: const ServiceLearn());
+        home: const PackageLearnView());
   }
 }
