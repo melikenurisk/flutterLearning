@@ -9,7 +9,7 @@ class LoadingBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SpinKitWave(
-      color: Colors.white,
+      color: Colors.red,
       size: size ?? 50.0,
       //controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
     );
