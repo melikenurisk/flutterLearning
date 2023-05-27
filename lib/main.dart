@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:full_learn/202/animated_learn_view.dart';
+import 'package:full_learn/202/cache/shared_learn_cache.dart';
+import 'package:full_learn/202/form_learn_view.dart';
 import 'package:full_learn/202/image_learn_202.dart';
+import 'package:full_learn/202/oop_learn_view.dart';
 
 import 'package:full_learn/202/package_learn_view.dart';
 import 'package:full_learn/202/service/service_get_learn_view.dart';
 import 'package:full_learn/202/service/service_post_learn_view.dart';
+import 'package:full_learn/202/state_manage/state_manage_learn_view.dart';
 import 'package:full_learn/202/theme/light_theme.dart';
 import 'package:full_learn/202/theme_learn_view.dart';
 import '101/color_learn.dart';
@@ -58,6 +62,6 @@ class MyApp extends StatelessWidget {
         //     centerTitle: true,
         //   ),
         // ),
-        home: const AnimatedLearnView());
+        home: const SharedLearn());
   }
 }

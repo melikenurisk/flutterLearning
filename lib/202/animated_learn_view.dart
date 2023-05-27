@@ -19,6 +19,7 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
   late AnimationController controller;
   bool _isVisible = false;
   bool _isOpacity = false;
+
   @override
   void _changeVisible() {
     setState(() {
