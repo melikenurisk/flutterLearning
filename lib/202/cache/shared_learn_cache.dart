@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:full_learn/202/cache/shared_manager.dart';
+import 'package:full_learn/202/cache/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedLearn extends StatefulWidget {
@@ -12,11 +13,13 @@ class SharedLearn extends StatefulWidget {
 class _SharedLearnState extends LoadingStateful<SharedLearn> {
   int _currentValue = 0;
   late final SharedManager _manager;
+  late final List<User> userItems;
 
   @override
   void initState() {
     super.initState();
     _manager = SharedManager();
+    userItems = UserItems().users;
     _initialize();
   }
 
@@ -60,10 +63,14 @@ class _SharedLearnState extends LoadingStateful<SharedLearn> {
         mainAxisSize: MainAxisSize.min,
         children: [_saveValueButton(), _removeValueButton()],
       ),
-      body: TextField(
-        onChanged: (value) {
-          _onChangeValue(value);
-        },
+      body: Column(
+        children: [
+          TextField(
+            onChanged: (value) {
+              _onChangeValue(value);
+            },
+          ),
+        ],
       ),
     );
   }
@@ -88,6 +95,17 @@ class _SharedLearnState extends LoadingStateful<SharedLearn> {
       },
       child: const Icon(Icons.remove_circle),
     );
+  }
+}
+
+class UserItems {
+  late final List<User> users;
+  UserItems() {
+    users = [
+      User('mike', 'mnı', 'mikei.sk'),
+      User('öfk', 'maruk', 'ömerfk'),
+      User('nue', 'melikenur', 'melikenurisk'),
+    ];
   }
 }
 
