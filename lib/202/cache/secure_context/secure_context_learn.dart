@@ -13,7 +13,7 @@ enum _SecureKeys { token }
 class _SecureContextLearnState extends State<SecureContextLearn> {
   final _storage = const FlutterSecureStorage();
   String _title = '';
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   void saveItems(String data) {
     setState(() {

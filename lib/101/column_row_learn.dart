@@ -22,22 +22,22 @@ class ColumnRowLearn extends StatelessWidget {
                 ],
               )),
           const Spacer(flex: 2),
-          Expanded(
+          const Expanded(
               flex: 2,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
-                children: const [
+                children: [
                   Text('a'),
                   Text('b'),
                   Text('c'),
                 ],
               )),
-          SizedBox(
+          const SizedBox(
             height: ProjectContainerSized.cardHeight,
             child: Column(
-              children: const [
+              children: [
                 Expanded(child: Text('data')),
                 Expanded(child: Text('data')),
                 Expanded(child: Text('data')),

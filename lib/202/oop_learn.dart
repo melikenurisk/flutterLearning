@@ -24,6 +24,7 @@ class FileDownload extends IFileDownload with ShareMixin {
 }
 
 class SMSDownload implements IFileDownload {
+  @override
   bool? downloadItem(FileItem? fileItem) {
     if (fileItem == null) throw FileDownloadException();
 

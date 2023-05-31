@@ -20,7 +20,6 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
   bool _isVisible = false;
   bool _isOpacity = false;
 
-  @override
   void _changeVisible() {
     setState(() {
       _isVisible = !_isVisible;
@@ -71,9 +70,9 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
             color: Colors.blue,
             margin: const EdgeInsets.all(5),
           ),
-          Expanded(
+          const Expanded(
               child: Stack(
-            children: const [
+            children: [
               AnimatedPositioned(
                 top: 30,
                 curve: Curves.elasticOut,

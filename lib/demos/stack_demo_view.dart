@@ -17,7 +17,7 @@ class StackDemoView extends StatelessWidget {
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  Positioned.fill(child: RandomImage(), bottom: _cardHeight / 2),
+                  Positioned.fill(bottom: _cardHeight / 2, child: const RandomImage()),
                   Positioned(height: _cardHeight, bottom: 0, width: _cardWidth, child: _cardCustom())
                 ],
               )),

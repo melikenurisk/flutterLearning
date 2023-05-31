@@ -10,7 +10,6 @@ abstract class StateLearnViewModel extends State<StateManageLearnView> {
   bool isVisible = false;
   bool isOpacity = true;
 
-  @override
   void changeVisible() {
     setState(() {
       isVisible = !isVisible;

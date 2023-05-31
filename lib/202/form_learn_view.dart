@@ -8,7 +8,7 @@ class FormLearnView extends StatefulWidget {
 }
 
 class _FormLearnViewState extends State<FormLearnView> {
-  GlobalKey<FormState> _key = GlobalKey();
+  final GlobalKey<FormState> _key = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +25,9 @@ class _FormLearnViewState extends State<FormLearnView> {
               value: 'v',
               validator: FormFieldValidator().isNotEmpty,
               items: const [
-                DropdownMenuItem(child: Text('a'), value: 'v'),
-                DropdownMenuItem(child: Text('a'), value: 'v2'),
-                DropdownMenuItem(child: Text('a'), value: 'v3'),
+                DropdownMenuItem(value: 'v', child: Text('a')),
+                DropdownMenuItem(value: 'v2', child: Text('a')),
+                DropdownMenuItem(value: 'v3', child: Text('a')),
               ],
               onChanged: (value) {}),
           ElevatedButton(

@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:full_learn/202/service/comments_learn_view.dart';
@@ -17,7 +15,8 @@ class _ServiceLearnState extends State<ServiceLearn> {
   List<PostModel>? _items;
   String? name;
   bool _isLoading = false;
-  late final Dio _networkManager;
+  // ignore: unused_field
+  late final Dio _dio;
   final _baseUrl = 'https://jsonplaceholder.typicode.com/';
 
   late final IPostService _postService;
@@ -25,7 +24,7 @@ class _ServiceLearnState extends State<ServiceLearn> {
   @override
   void initState() {
     super.initState();
-    _networkManager = Dio(BaseOptions(baseUrl: _baseUrl));
+    _dio = Dio(BaseOptions(baseUrl: _baseUrl));
     _postService = PostService();
     name = 'mike';
     fetchPostItemsAdvance();
@@ -90,7 +89,7 @@ class _PostCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       child: ListTile(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(

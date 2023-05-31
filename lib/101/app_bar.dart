@@ -22,7 +22,7 @@ class AppBarLearnView extends StatelessWidget {
           Text(_title),
         ],
       ),
-      body: Column(children: const []),
+      body: const Column(children: []),
     );
   }
 }

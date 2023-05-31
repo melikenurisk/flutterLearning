@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, camel_case_extensions
+
 import 'package:flutter/material.dart';
 import 'package:full_learn/101/icon_learn.dart';
 import 'package:full_learn/101/image_learn.dart';
