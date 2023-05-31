@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:full_learn/202/animated_learn_view.dart';
+import 'package:full_learn/202/cache/secure_context/secure_context_learn.dart';
 import 'package:full_learn/202/cache/shared_learn_cache.dart';
 import 'package:full_learn/202/cache/shared_list_cache.dart';
 import 'package:full_learn/202/form_learn_view.dart';
@@ -63,6 +64,6 @@ class MyApp extends StatelessWidget {
         //     centerTitle: true,
         //   ),
         // ),
-        home: const SharedListCache());
+        home: const SecureContextLearn());
   }
 }
