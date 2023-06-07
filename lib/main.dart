@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:full_learn/202/alert_learn.dart';
 import 'package:full_learn/202/animated_learn_view.dart';
 import 'package:full_learn/202/cache/secure_context/secure_context_learn.dart';
 import 'package:full_learn/202/cache/shared_learn_cache.dart';
@@ -67,6 +68,6 @@ class MyApp extends StatelessWidget {
         //     centerTitle: true,
         //   ),
         // ),
-        home: const SheetLearn());
+        home: const AlertLearn());
   }
 }
